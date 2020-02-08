@@ -1,1 +1,40 @@
-<p>form-wedding works!</p>
+<h2>Por favor para confirmar tu asistencia rellena el siguiente formulario </h2>
+<form [formGroup]="weddingForm" (ngSubmit)="onSubmit(weddingForm.value)" class="form">
+  <label class="field">
+    Nombre:
+    <input type="text" formControlName="name">
+  </label>
+
+
+  <label class="field">
+    apellidos:
+    <input type="text" formControlName="surnames">
+  </label>
+
+
+  <label class="field">
+    email:
+    <input type="text" formControlName="email">
+  </label>
+
+
+  <label class="field">
+    Numero de telefono:
+    <input type="text" formControlName="phoneNumber">
+  </label>
+
+
+  <label class="field radio-buttons">
+    <span>
+      Ire eb bus:
+    </span>
+    <input type="radio" formControlName="isGoInBus" value="true">
+  <span>
+    No ire en bus
+  </span>
+    <input type="radio" formControlName="isGoInBus" value="false">
+  </label>
+
+  <button type="submit" class="btn btn-success" class="submit-button" >Submit</button>
+</form>
+<span> -->  {{weddingForm.value | json}}</span>

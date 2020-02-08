@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormWeddingComponent } from './form-wedding/form-wedding.component';
 import { HeaderComponent } from './header/header.component';
 import { PicturesComponent } from './pictures/pictures.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { PicturesComponent } from './pictures/pictures.component';
     PicturesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     FormWeddingComponent,
