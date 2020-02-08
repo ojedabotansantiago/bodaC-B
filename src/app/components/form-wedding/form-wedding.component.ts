@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { CForm } from 'src/app/models/c-form';
 
@@ -13,9 +13,7 @@ export class FormWeddingComponent implements OnInit {
   weddingDataForm: CForm;
   weddingForm: FormGroup;
 
-  constructor( private fb?: FormBuilder) { }
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder) {
     this.weddingDataForm = new CForm();
 
     this.weddingForm = this.fb.group( {
@@ -24,7 +22,11 @@ export class FormWeddingComponent implements OnInit {
       surnames: [this.weddingDataForm.surnames, Validators.required],
       phoneNumber: [this.weddingDataForm.phoneNumber, Validators.required],
       isGoInBus: [this.weddingDataForm.isGoInBus, Validators.required]
-    });
+    })
+  }
+
+  ngOnInit(): void {
+;
   }
 
   onSubmit(data) {
