@@ -1,1 +1,22 @@
 
+
+app-header{
+
+  padding: 2%;
+  // color: palegoldenrod;
+  .header-card.mat-card {
+    background-color: #d5f4e6;
+
+  }
+  .mat-card{
+    background-color: #d5f4e6;
+  }
+}
+.mat-card{
+  font-family: 'Dancing Script';
+  background-color: rgba(214, 201, 199, 0.9);
+  mat-card-title{
+    font-size: 8vw;
+  }
+}
+
