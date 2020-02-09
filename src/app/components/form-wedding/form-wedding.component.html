@@ -1,40 +1,43 @@
 <h2>Por favor para confirmar tu asistencia rellena el siguiente formulario </h2>
 <form [formGroup]="weddingForm" (ngSubmit)="onSubmit(weddingForm.value)" class="form">
-  <label class="field">
-    Nombre:
-    <input type="text" formControlName="name">
-  </label>
+  <mat-form-field appearance="fill">
+    <label>Nombre</label>
+    <!-- <mat-label>Nombre</mat-label> -->
+    <input matInput  type="text" formControlName="name">
+  </mat-form-field>
 
 
-  <label class="field">
-    apellidos:
-    <input type="text" formControlName="surnames">
-  </label>
+  <mat-form-field appearance="fill">
+    <!-- <mat-label class="field">Apellidos</mat-label> -->
+    <label>surnames</label>
+    <input matInput  type="text" formControlName="surnames">
+  </mat-form-field>
 
 
-  <label class="field">
-    email:
-    <input type="text" formControlName="email">
-  </label>
+  <mat-form-field appearance="fill">
+    <label class="field">Email</label>
+    <input matInput  type="text" formControlName="email" p>
+  </mat-form-field>
 
 
-  <label class="field">
-    Numero de telefono:
-    <input type="text" formControlName="phoneNumber">
-  </label>
+  <mat-form-field appearance="fill">
+    <label class="field">Numero de telefono</label>
+    <input matInput  type="text" formControlName="phoneNumber">
+  </mat-form-field>
 
 
-  <label class="field radio-buttons">
-    <span>
-      Ire eb bus:
-    </span>
-    <input type="radio" formControlName="isGoInBus" value="true">
-  <span>
-    No ire en bus
-  </span>
-    <input type="radio" formControlName="isGoInBus" value="false">
-  </label>
 
-  <button type="submit"  class="submit-button" >Submit</button>
+  <mat-radio-group formControlName="isGoInBus" class="radio">
+    <label class="field">
+      <h4>Pondremos a vuestra disposicion atubuses para que no os tengais que preocupar del transporte</h4>
+      <label>el trallecto que se realizara sera salida de la iglesia hasta los gerenomios</label>
+    </label>
+    <mat-radio-button value="true">si, ire en bus</mat-radio-button>
+    <mat-radio-button value="galse">no ire en bus</mat-radio-button>
+  </mat-radio-group>
+
+
+
+  <button mat-button type="submit"  class="submit-button" >Enviar formulario</button>
 </form>
 <span> -->  {{weddingForm.value | json}}</span>

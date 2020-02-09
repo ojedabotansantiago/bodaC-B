@@ -1,31 +1,47 @@
-
-*{
-  display: flex;
-}
 .form{
-  display: flex;
-  flex: auto;
-  margin: auto;
-
-
-  input[type=text], select {
-    max-width: 25%;
-    padding: 1%;
-    margin: 1%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .field{
-
+  display: grid;
+  color: palegoldenrod;
+  .mat-form-field{
+    font-family: 'Dancing Script';
+    font-size: 25%;
+    max-width: 30vw;
+    font-weight: bolder;
+    font-size: 2rem;
   }
 
-  .submit-button{
-    max-width: 25%;
-    padding: 1%;
-    margin: 1%;
-    border: 1px solid #ccc;
-    border-radius: 4px
+  .mat-radio-group{
+    font-size: 2rem;
+    display: grid;
+    .radio{
+      padding-left: 5%;;
+    }
+    .mat-radio-button{
+      margin-left: 5vw;
+      font-size: 2rem;
+      font-family: 'Dancing Script';
+    }
   }
+
+  .form.mat-form-field {
+    width: 120px;
+    font-size: 10px;
+    .field{
+      font-size: 10px;
+    }
+
+  }
+  .form.mat-form-field.mat-label {
+    max-width: 25vw;
+    font-family: 'Dancing Script';
+    .mat-input-element .mat-form-field-autofill-control{
+      .mat-form-field-label-wrapper {
+        color: palegoldenrod;
+      }
+    }
+  }
+.submit-button{
+  border-radius: 1%;;
 }
+}
+
 
