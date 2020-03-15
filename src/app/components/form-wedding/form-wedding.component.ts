@@ -21,7 +21,10 @@ export class FormWeddingComponent implements OnInit {
       email: [this.weddingDataForm.email, Validators.required],
       surnames: [this.weddingDataForm.surnames, Validators.required],
       phoneNumber: [this.weddingDataForm.phoneNumber, Validators.required],
-      isGoInBus: [this.weddingDataForm.isGoInBus, Validators.required]
+      isGoInBus: [this.weddingDataForm.isGoInBus, Validators.required],
+      songA: [this.weddingDataForm.songA, Validators.required],
+      songB: [this.weddingDataForm.songB, Validators.required],
+      songC: [this.weddingDataForm.songC, Validators.required]
     })
   }
 

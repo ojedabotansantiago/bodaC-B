@@ -25,9 +25,6 @@
     <label class="field">Numero de telefono</label>
     <input matInput  type="text" formControlName="phoneNumber" placeholder="Numero de telefono">
   </mat-form-field>
-
-
-
   <mat-radio-group formControlName="isGoInBus" class="radio">
     <label class="field font-s">
       <p class="text-bolt">Pondremos a vuestra disposicion atubuses para que no os tengais que preocupar del transporte, el trallecto que se
@@ -37,6 +34,25 @@
     <mat-radio-button value="true">si, ire en bus</mat-radio-button>
     <mat-radio-button value="galse">no ire en bus</mat-radio-button>
   </mat-radio-group>
+
+  <div>
+    <p class="font-l text-bolt">Dinos que tres canciones no pueden faltar </p>
+
+    <mat-form-field appearance="fill">
+      <label class="field">SongA</label>
+      <input matInput  type="text" formControlName="songA" placeholder="SongA">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <label class="field">SongB</label>
+      <input matInput  type="text" formControlName="songB" placeholder="SongB">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <label class="field">SongC</label>
+      <input matInput  type="text" formControlName="songC" placeholder="SongC">
+    </mat-form-field>
+  </div>
 
   <div class="container-submit-button">
     <button mat-button type="submit"  class="info-link" >Enviar formulario</button>
