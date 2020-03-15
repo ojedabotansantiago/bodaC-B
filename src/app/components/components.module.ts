@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { PicturesComponent } from './pictures/pictures.component';
 import { GeneralInfoComponent } from './general-info/general-info.component';
 import { ChuchInfoComponent } from './chuch-info/chuch-info.component';
+import { InfoPartyComponent } from './info-party/info-party.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ChuchInfoComponent } from './chuch-info/chuch-info.component';
     HeaderComponent,
     PicturesComponent,
     GeneralInfoComponent,
-    ChuchInfoComponent
+    ChuchInfoComponent,
+    InfoPartyComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { ChuchInfoComponent } from './chuch-info/chuch-info.component';
     HeaderComponent,
     PicturesComponent,
     GeneralInfoComponent,
-    ChuchInfoComponent
+    ChuchInfoComponent,
+    InfoPartyComponent
   ]
 })
 export class ComponentsModule { }
