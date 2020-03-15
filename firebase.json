@@ -1,22 +1,16 @@
 {
-  "hosting": [
-    {
-      "target": "boda",
-      "public": "dist/boda",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    }
-  ],
-  "storage": {
-    "rules": "storage.rules"
+  "hosting": {
+    "public": "dist/boda",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }

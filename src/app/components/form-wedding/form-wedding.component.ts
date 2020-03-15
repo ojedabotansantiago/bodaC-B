@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import 'firebase/firestore';
 
 import { CForm } from 'src/app/models/c-form';
 
@@ -12,8 +15,9 @@ import { CForm } from 'src/app/models/c-form';
 export class FormWeddingComponent implements OnInit {
   weddingDataForm: CForm;
   weddingForm: FormGroup;
-
-  constructor(private fb: FormBuilder) {
+  form;
+  constructor(private fb: FormBuilder, public firestore: AngularFirestore) {
+    this.form = this.firestore.collection('form').snapshotChanges();
     this.weddingDataForm = new CForm();
 
     this.weddingForm = this.fb.group( {
@@ -30,11 +34,12 @@ export class FormWeddingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-;
+
   }
 
   onSubmit(data) {
-    console.log(data);
+    //this.form().snapshotChanges();
+    this.firestore.collection('form').add(data).then(data => console.log(`is ok ${data}`)).catch(err => console.log(`is err ${data}`));
   }
 
 }

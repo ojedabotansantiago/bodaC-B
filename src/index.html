@@ -1,25 +1,51 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Boda</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link rel="icon"
+        type="image/x-icon"
+        href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Indie+Flower|Pacifico&display=swap"
+        rel="stylesheet">
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9j4yV0mRORGSlbY23zZ2xz7RhHtDm6lM" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9j4yV0mRORGSlbY23zZ2xz7RhHtDm6lM"
+          type="text/javascript"></script>
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.11.0/firebase-analytics.js"></script>
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBtMMSO4gYrrRucD5vqU8OmIqeYOjJx0TY",
+      authDomain: "bodaclausanti.firebaseapp.com",
+      databaseURL: "https://bodaclausanti.firebaseio.com",
+      projectId: "bodaclausanti",
+      storageBucket: "bodaclausanti.appspot.com",
+      messagingSenderId: "132602810695",
+      appId: "1:132602810695:web:e416e12754b49a21bf3c62",
+      measurementId: "G-SV936EXZYW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </head>
-  <body class="">
+
+<body class="">
   <app-root></app-root>
 </body>
 

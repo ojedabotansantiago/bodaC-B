@@ -1,7 +1,7 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class CForm {
-
+  id: string;
   name: string;
   surnames: string;
   email: string;
@@ -12,6 +12,7 @@ export class CForm {
   songB: string;
   songC: string;
   constructor() {
+    this.id = '';
     this.name = '';
     this.surnames = '';
     this.email = '';
