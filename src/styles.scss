@@ -1,8 +1,9 @@
 
 $color-red: #FF0000;
 $color-green: #00FF00;
-$color-blue: #408af7;
+$color-blue: #014685;
 $color-cards:rgba(214, 201, 199, 0.9);
+$color-text: #1a315e;
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -16,7 +17,6 @@ body {
   background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
   background-size: cover;
   background-color: palegoldenrod;
-  // color: palegoldenrod;
   margin: 5%;
 }
 .info-link{
@@ -40,8 +40,12 @@ body {
   background-color: transparent;
 }
 .text-color{
-  color: #000000;
+  color: $color-text;
 }
 .comp-background{
   background-color: rgba(214, 201, 199, 0.7);
 }
+.map {
+  height: 30vh;
+  width: 100%;
+ }
