@@ -27,29 +27,38 @@
   </mat-form-field>
   <mat-radio-group formControlName="isGoInBus" class="radio">
     <label class="field font-s">
-      <p class="text-bolt">Pondremos a vuestra disposicion atubuses para que no os tengais que preocupar del transporte, el trallecto que se
-        realizara sera salida de la iglesia hasta los gerenomios y tambien abra autobuses de vuleta a partir de las 01:00 hasta las 05:00
-      con una frecuencia de dos horas</p>
+      <p class="text-bolt">Pondremos a vuestra disposición autobuses para que no os tengais que preocupar del transporte, el trayecto que se
+        realizará será desde la iglesia hasta el convite y tambien para volver habrá autobuses de vuelta</p>
     </label>
-    <mat-radio-button value="true">si, ire en bus</mat-radio-button>
-    <mat-radio-button value="galse">no ire en bus</mat-radio-button>
+    <mat-radio-button value="true">Si, ire en bus</mat-radio-button>
+    <mat-radio-button value="false">No, ire en bus</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-radio-group formControlName="directionBus" class="radio">
+    <label class="field font-s">
+      <p class="text-bolt">En caso de que necesites autobus de vuelta desde el convite,
+        ¿Cual de estas ubicaciones es la que mejor te viene?</p>
+    </label>
+    <mat-radio-button value="'rozas'">Parque Paris (Las Rozas)</mat-radio-button>
+    <mat-radio-button value="'pozuleo'">Avenida de Europa (Pozuelo)</mat-radio-button>
+    <mat-radio-button value="'madrid'">Sainz de Baranda (Madrid)</mat-radio-button>
   </mat-radio-group>
 
   <div>
-    <p class="font-l text-bolt">Dinos que tres canciones no pueden faltar </p>
+    <p class="font-l text-bolt">¡Y por ultimo dinos que tres canciones no pueden faltar para ti!</p>
 
     <mat-form-field appearance="fill">
-      <label class="field">SongA</label>
+      <label class="field">1º Cancíon</label>
       <input matInput  type="text" formControlName="songA" placeholder="SongA">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-      <label class="field">SongB</label>
+      <label class="field">2º Cancíon</label>
       <input matInput  type="text" formControlName="songB" placeholder="SongB">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-      <label class="field">SongC</label>
+      <label class="field">3º Cancíon</label>
       <input matInput  type="text" formControlName="songC" placeholder="SongC">
     </mat-form-field>
   </div>

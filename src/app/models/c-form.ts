@@ -7,6 +7,7 @@ export class CForm {
   email: string;
   phoneNumber: string;
   isGoInBus: boolean;
+  directionBus: string;
   songA: string;
   songB: string;
   songC: string;
@@ -16,6 +17,7 @@ export class CForm {
     this.email = '';
     this.phoneNumber = '';
     this.isGoInBus = false;
+    this.directionBus = '';
     this.songA = '';
     this.songB = '';
     this.songC = '';

@@ -22,9 +22,10 @@ export class FormWeddingComponent implements OnInit {
       surnames: [this.weddingDataForm.surnames, Validators.required],
       phoneNumber: [this.weddingDataForm.phoneNumber, Validators.required],
       isGoInBus: [this.weddingDataForm.isGoInBus, Validators.required],
-      songA: [this.weddingDataForm.songA, Validators.required],
-      songB: [this.weddingDataForm.songB, Validators.required],
-      songC: [this.weddingDataForm.songC, Validators.required]
+      directionBus: [this.weddingDataForm.directionBus],
+      songA: [this.weddingDataForm.songA],
+      songB: [this.weddingDataForm.songB],
+      songC: [this.weddingDataForm.songC]
     })
   }
 
