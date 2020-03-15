@@ -2,7 +2,7 @@
   <p class="font-l text-bolt">Por favor para confirmar tu asistencia rellena el siguiente formulario </p>
 
   <mat-form-field appearance="fill">
-    <label class="text-bolt">Nombre</label>
+    <label class="text-bolt font-s">Nombre</label>
     <!-- <mat-label>Nombre</mat-label> -->
     <input matInput  type="text" formControlName="name" placeholder="Nombre">
   </mat-form-field>
@@ -10,19 +10,19 @@
 
   <mat-form-field appearance="fill">
     <!-- <mat-label class="field">Apellidos</mat-label> -->
-    <label class="text-bolt">Appelidos</label>
-    <input matInput  type="text" formControlName="surnames" placeholder="Apellido Apellido">
+    <label class="text-bolt font-s">Appelidos</label>
+    <input matInput type="text" formControlName="surnames" placeholder="Apellido Apellido">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
-    <label class="field text-bolt">Email</label>
+    <label class="field text-bolt font-s">Email</label>
     <input matInput  type="text" formControlName="email" placeholder="email@email.com">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
-    <label class="field text-bolt">Numero de telefono</label>
+    <label class="field text-bolt font-s">Numero de telefono</label>
     <input matInput  type="text" formControlName="phoneNumber" placeholder="Numero de telefono">
   </mat-form-field>
 
@@ -31,8 +31,8 @@
       <p class="text-bolt">Pondremos a vuestra disposición autobuses para que no os tengais que preocupar del transporte, el trayecto que se
         realizará será desde la iglesia hasta el convite y tambien para volver habrá autobuses de vuelta</p>
     </label>
-    <mat-radio-button value="true">Si, ire en bus</mat-radio-button>
-    <mat-radio-button value="false">No, ire en bus</mat-radio-button>
+    <mat-radio-button value="true" class="font-s">Si, ire en bus</mat-radio-button>
+    <mat-radio-button value="false" class="font-s">No, ire en bus</mat-radio-button>
   </mat-radio-group>
 
   <mat-radio-group formControlName="directionBus" class="radio">
@@ -40,32 +40,32 @@
       <p class="text-bolt">En caso de que necesites autobus de vuelta desde el convite,
         ¿Cual de estas ubicaciones es la que mejor te viene?</p>
     </label>
-    <mat-radio-button value="'rozas'">Parque Paris (Las Rozas)</mat-radio-button>
-    <mat-radio-button value="'pozuleo'">Avenida de Europa (Pozuelo)</mat-radio-button>
-    <mat-radio-button value="'madrid'">Sainz de Baranda (Madrid)</mat-radio-button>
+    <mat-radio-button value="'rozas'" class="font-s">Parque Paris (Las Rozas)</mat-radio-button>
+    <mat-radio-button value="'pozuleo'" class="font-s">Avenida de Europa (Pozuelo)</mat-radio-button>
+    <mat-radio-button value="'madrid'" class="font-s">Sainz de Baranda (Madrid)</mat-radio-button>
   </mat-radio-group>
 
   <div>
     <p class="font-l text-bolt">¡Por ultimo dinos que tres canciones no pueden faltar para ti!</p>
 
     <mat-form-field appearance="fill">
-      <label class="field">1º Cancíon</label>
+      <label class="field font-s">1º Cancíon</label>
       <input matInput  type="text" formControlName="songA" placeholder="SongA">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-      <label class="field">2º Cancíon</label>
+      <label class="field font-s">2º Cancíon</label>
       <input matInput  type="text" formControlName="songB" placeholder="SongB">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-      <label class="field">3º Cancíon</label>
+      <label class="field font-s">3º Cancíon</label>
       <input matInput  type="text" formControlName="songC" placeholder="SongC">
     </mat-form-field>
   </div>
 
   <div class="container-submit-button">
-    <button mat-button type="submit"  class="info-link" >Enviar formulario</button>
+    <button mat-button type="submit"  class="info-link font-s" >Enviar formulario</button>
   </div>
 </form>
 <span> -->  {{weddingForm.value | json}}</span>

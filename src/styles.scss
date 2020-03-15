@@ -1,9 +1,9 @@
 
 $color-red: #FF0000;
 $color-green: #00FF00;
-$color-blue: #014685;
+$color-blue: #073a69;
 $color-cards:rgba(214, 201, 199, 0.9);
-$color-text: #1a315e;
+$color-text: rgb(9, 16, 59);
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -13,26 +13,47 @@ body {
 }
 body {
 	margin: 0;
-  font-family: 'Dancing Script';
-  background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
-  background-size: cover;
+  font-family: 'Pacifico';
   background-color: palegoldenrod;
   margin: 5%;
+}
+.bg-title{
+
+}
+.bg1{
+  background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
+  background-size: cover;
+  background-position: center top;
+  border-radius: 5px;
+}
+.bg2{
+  background-image: url("./assets/resources/playaMalasiaCaballito_malasia.jpg");
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 5px;
+}
+.bg3{
+  background-image: url("./assets/resources/rugbyItaliaVSScocia_pose.jpg") ;
+  opacity: 1;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: 5px;
 }
 .info-link{
   color: $color-blue;
 }
 .font-s{
-  font-size: 1.5rem;
-  font-family: 'Dancing Script';
+  font-size: 1rem;
+  font-family: 'Pacifico';
 }
 .font-l{
   font-size: 2rem;
-  font-family: 'Dancing Script';
+  font-family: 'Pacifico';
 }
 .font-xl{
-  font-size: 4rem;
-  font-family: 'Dancing Script';
+  font-size: 3rem;
+  font-family: 'Pacifico';
 }
 .text-bolt{
   font-weight: bold;
@@ -51,11 +72,13 @@ body {
   color: $color-text;
 }
 .comp-background{
-  background-color: rgba(214, 201, 199, 0.7);
-  border-radius: 5px;
-
+  background-color: rgba(214, 201, 199, 0.4);
+}
+.color-response{
+  color: black;
 }
 .map {
+  opacity: 1;
   height: 30vh;
   width: 100%;
  }
