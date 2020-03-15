@@ -2,7 +2,7 @@
   <p class="font-l text-bolt">Por favor para confirmar tu asistencia rellena el siguiente formulario </p>
 
   <mat-form-field appearance="fill">
-    <label>Nombre</label>
+    <label class="text-bolt">Nombre</label>
     <!-- <mat-label>Nombre</mat-label> -->
     <input matInput  type="text" formControlName="name" placeholder="Nombre">
   </mat-form-field>
@@ -10,21 +10,22 @@
 
   <mat-form-field appearance="fill">
     <!-- <mat-label class="field">Apellidos</mat-label> -->
-    <label>Appelidos</label>
+    <label class="text-bolt">Appelidos</label>
     <input matInput  type="text" formControlName="surnames" placeholder="Apellido Apellido">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
-    <label class="field">Email</label>
+    <label class="field text-bolt">Email</label>
     <input matInput  type="text" formControlName="email" placeholder="email@email.com">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
-    <label class="field">Numero de telefono</label>
+    <label class="field text-bolt">Numero de telefono</label>
     <input matInput  type="text" formControlName="phoneNumber" placeholder="Numero de telefono">
   </mat-form-field>
+
   <mat-radio-group formControlName="isGoInBus" class="radio">
     <label class="field font-s">
       <p class="text-bolt">Pondremos a vuestra disposición autobuses para que no os tengais que preocupar del transporte, el trayecto que se
@@ -45,7 +46,7 @@
   </mat-radio-group>
 
   <div>
-    <p class="font-l text-bolt">¡Y por ultimo dinos que tres canciones no pueden faltar para ti!</p>
+    <p class="font-l text-bolt">¡Por ultimo dinos que tres canciones no pueden faltar para ti!</p>
 
     <mat-form-field appearance="fill">
       <label class="field">1º Cancíon</label>
