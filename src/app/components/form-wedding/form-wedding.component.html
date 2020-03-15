@@ -1,44 +1,45 @@
-<form [formGroup]="weddingForm" (ngSubmit)="onSubmit(weddingForm.value)" class="form text-center">
-  <h1>Por favor para confirmar tu asistencia rellena el siguiente formulario </h1>
+<form [formGroup]="weddingForm" (ngSubmit)="onSubmit(weddingForm.value)" class=" text-center comp-background text-color form-container">
+  <p class="font-l text-bolt">Por favor para confirmar tu asistencia rellena el siguiente formulario </p>
 
   <mat-form-field appearance="fill">
     <label>Nombre</label>
     <!-- <mat-label>Nombre</mat-label> -->
-    <input matInput  type="text" formControlName="name">
+    <input matInput  type="text" formControlName="name" placeholder="Nombre">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
     <!-- <mat-label class="field">Apellidos</mat-label> -->
-    <label>surnames</label>
-    <input matInput  type="text" formControlName="surnames">
+    <label>Appelidos</label>
+    <input matInput  type="text" formControlName="surnames" placeholder="Apellido Apellido">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
     <label class="field">Email</label>
-    <input matInput  type="text" formControlName="email" p>
+    <input matInput  type="text" formControlName="email" placeholder="email@email.com">
   </mat-form-field>
 
 
   <mat-form-field appearance="fill">
     <label class="field">Numero de telefono</label>
-    <input matInput  type="text" formControlName="phoneNumber">
+    <input matInput  type="text" formControlName="phoneNumber" placeholder="Numero de telefono">
   </mat-form-field>
 
 
 
   <mat-radio-group formControlName="isGoInBus" class="radio">
-    <label class="field">
-      <h4>Pondremos a vuestra disposicion atubuses para que no os tengais que preocupar del transporte</h4>
-      <label>el trallecto que se realizara sera salida de la iglesia hasta los gerenomios</label>
+    <label class="field font-s">
+      <p class="text-bolt">Pondremos a vuestra disposicion atubuses para que no os tengais que preocupar del transporte, el trallecto que se
+        realizara sera salida de la iglesia hasta los gerenomios y tambien abra autobuses de vuleta a partir de las 01:00 hasta las 05:00
+      con una frecuencia de dos horas</p>
     </label>
     <mat-radio-button value="true">si, ire en bus</mat-radio-button>
     <mat-radio-button value="galse">no ire en bus</mat-radio-button>
   </mat-radio-group>
 
-
-
-  <button mat-button type="submit"  class="submit-button" >Enviar formulario</button>
+  <div class="container-submit-button">
+    <button mat-button type="submit"  class="info-link" >Enviar formulario</button>
+  </div>
 </form>
 <span> -->  {{weddingForm.value | json}}</span>

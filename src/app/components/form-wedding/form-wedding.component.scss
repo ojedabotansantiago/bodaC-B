@@ -1,49 +1,21 @@
-.form{
-  display: grid;
-  background-color: rgba(209, 199, 239, 0.2);
-  padding: 2%;
-  margin-top: 1%;
-  .mat-form-field{
-    font-family: 'Dancing Script';
-    font-size: 25%;
-    max-width: 30vw;
-    font-weight: bolder;
-    font-size: 2rem;
-  }
 
-  .mat-radio-group{
-    font-size: 2rem;
-    display: grid;
-    .radio{
-      padding-left: 5%;;
-    }
-    .mat-radio-button{
-      margin-left: 5vw;
-      font-size: 2rem;
-      font-family: 'Dancing Script';
-    }
-  }
-
-  .form.mat-form-field {
-    width: 120px;
-    font-size: 10px;
-    .field{
-      font-size: 10px;
-    }
-
-  }
-  .form.mat-form-field.mat-label {
-    max-width: 25vw;
-    font-family: 'Dancing Script';
-    .mat-input-element .mat-form-field-autofill-control{
-      .mat-form-field-label-wrapper {
-        // color: palegoldenrod;
-      }
-    }
-  }
-.submit-button{
-  border-radius: 1%;;
+.form-container{
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }
+mat-form-field{
+  padding: 10px;
 }
-
+mat-radio-button {
+  padding: 10px;
+}
+.container-submit-button{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 100%;
+  button{
+    background-color: #014685;
+    color: white;
+  }
+}
 

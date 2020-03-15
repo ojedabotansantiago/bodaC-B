@@ -26,6 +26,10 @@ body {
   font-size: 1.5rem;
   font-family: 'Dancing Script';
 }
+.font-l{
+  font-size: 2rem;
+  font-family: 'Dancing Script';
+}
 .text-bolt{
   font-weight: bold;
 }
@@ -44,6 +48,8 @@ body {
 }
 .comp-background{
   background-color: rgba(214, 201, 199, 0.7);
+  border-radius: 5px;
+
 }
 .map {
   height: 30vh;
