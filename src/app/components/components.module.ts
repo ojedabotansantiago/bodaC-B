@@ -6,17 +6,22 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { FormWeddingComponent } from './form-wedding/form-wedding.component';
 import { HeaderComponent } from './header/header.component';
 import { PicturesComponent } from './pictures/pictures.component';
+import { GeneralInfoComponent } from './general-info/general-info.component';
+import { ChuchInfoComponent } from './chuch-info/chuch-info.component';
 
 
 @NgModule({
   declarations: [
     FormWeddingComponent,
     HeaderComponent,
-    PicturesComponent
+    PicturesComponent,
+    GeneralInfoComponent,
+    ChuchInfoComponent
   ],
   imports: [
     CommonModule,
@@ -25,13 +30,16 @@ import { PicturesComponent } from './pictures/pictures.component';
     MatSliderModule,
     MatRadioModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   exports: [
     FormWeddingComponent,
     HeaderComponent,
     HeaderComponent,
-    PicturesComponent
+    PicturesComponent,
+    GeneralInfoComponent,
+    ChuchInfoComponent
   ]
 })
 export class ComponentsModule { }

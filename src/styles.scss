@@ -1,4 +1,9 @@
+
+$color-red: #FF0000;
+$color-green: #00FF00;
+$color-blue: #408af7;
 /* You can add global styles to this file, and also import other style files */
+
 html,
 body {
 	height: 100%;
@@ -6,9 +11,12 @@ body {
 body {
 	margin: 0;
   font-family: 'Dancing Script';
-  background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
+/*   background-image: url("./assets/resources/bodaJorgeYNat.jpeg"); */
   background-size: cover;
   background-color: palegoldenrod;
   // color: palegoldenrod;
   margin: 5%;
+}
+.info-link{
+  color: $color-blue;
 }
