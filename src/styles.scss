@@ -2,6 +2,8 @@
 $color-red: #FF0000;
 $color-green: #00FF00;
 $color-blue: #408af7;
+$color-cards:rgba(214, 201, 199, 0.9);
+
 /* You can add global styles to this file, and also import other style files */
 
 html,
@@ -11,7 +13,7 @@ body {
 body {
 	margin: 0;
   font-family: 'Dancing Script';
-/*   background-image: url("./assets/resources/bodaJorgeYNat.jpeg"); */
+  background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
   background-size: cover;
   background-color: palegoldenrod;
   // color: palegoldenrod;
@@ -26,4 +28,20 @@ body {
 }
 .text-bolt{
   font-weight: bold;
+}
+.text-center{
+  text-align: center;
+}
+.mg-t{
+  margin-top: 2%;
+}
+.cp-bkg{
+  border-radius: 1;
+  background-color: transparent;
+}
+.text-color{
+  color: #000000;
+}
+.comp-background{
+  background-color: rgba(214, 201, 199, 0.7);
 }
