@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "boda-maps"
+  },
+  "targets": {
+    "boda-maps": {
+      "hosting": {
+        "boda": [
+          "boda-maps"
+        ]
+      }
+    }
   }
 }
