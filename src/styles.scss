@@ -24,17 +24,17 @@ body {
 .bg1{
   background-image: url("./assets/resources/bodaJorgeYNat.jpeg");
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   border-radius: 5px;
 }
 .bg2{
-  background-image: url("./assets/resources/playaMalasiaCaballito_malasia.jpg");
-  background-position: bottom;
+  background-image: url("./assets/resources/rugbyItaliaVSScocia_pose.jpg");
+  background-position: center;
   background-size: cover;
   border-radius: 5px;
 }
 .bg3{
-  background-image: url("./assets/resources/rugbyItaliaVSScocia_pose.jpg") ;
+  //background-image: url("./assets/resources/rugbyItaliaVSScocia_pose.jpg") ;
   opacity: 1;
   background-size: cover;
   background-position: center top;
@@ -52,12 +52,17 @@ body {
   font-size: 2rem;
   font-family: 'Pacifico';
 }
+
 .font-xl{
   font-size: 3rem;
   font-family: 'Pacifico';
 }
 .text-bolt{
   font-weight: bold;
+}
+.gradient{
+  background: radial-gradient(circle, rgba(216,234,247,0.14329481792717091) 73%, rgba(195,222,227,1) 100%);
+
 }
 .text-center{
   text-align: center;
